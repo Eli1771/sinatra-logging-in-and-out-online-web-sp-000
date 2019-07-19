@@ -10,7 +10,7 @@
       <h1>Welcome <%= @user.username %></h1>
       <h2>Your Account Balance</h2>
       <% @user = Helpers.current_user(session) %>
-      <h3><%= @user.balance %></h3>
+      <h3>Your Balance: <%= @user.balance %></h3>
       <a href="/logout">Log Out</a>
     <% else %>
       <a href="/">Error... Return Home</a>
