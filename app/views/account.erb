@@ -5,9 +5,10 @@
     <title>title</title>
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
-  <body id="page-top">
-    <h1>Your Account Balance</h1>
-    <h2><%= @user.balance %></h2>
+  <body id="page-top"></body>
+    <h1>Welcome <%= @user.username %></h1>
+    <h2>Your Account Balance</h2>
+    <h3><%= @user.balance %></h3>
     <a href="/logout">Log Out</a>
   </body>
 </html>
