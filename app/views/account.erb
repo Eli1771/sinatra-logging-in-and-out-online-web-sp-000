@@ -9,7 +9,7 @@
     <% if 
     <h1>Welcome <%= @user.username %></h1>
     <h2>Your Account Balance</h2>
-    <% @user = Helper.current_user(session) %>
+    <% @user = Helpers.current_user(session) %>
     <h3><%= @user.balance %></h3>
     <a href="/logout">Log Out</a>
   </body>
