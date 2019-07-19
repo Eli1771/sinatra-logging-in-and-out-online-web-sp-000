@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top"></body>
+    <% if 
     <h1>Welcome <%= @user.username %></h1>
     <h2>Your Account Balance</h2>
-    <% @user = current_user(session) %>
+    <% @user = User.current_user(session) %>
     <h3><%= @user.balance %></h3>
     <a href="/logout">Log Out</a>
   </body>
