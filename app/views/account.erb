@@ -8,6 +8,7 @@
   <body id="page-top"></body>
     <h1>Welcome <%= @user.username %></h1>
     <h2>Your Account Balance</h2>
+    <% @user = current_user(session) %>
     <h3><%= @user.balance %></h3>
     <a href="/logout">Log Out</a>
   </body>
